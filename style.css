@@ -1,0 +1,283 @@
+@import url("https://fonts.google.com/specimen/Overpass");
+
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color:hsl(216, 12%, 8%) ;
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Overpass", sans-serif;
+}
+section{
+   
+    background-Image: linear-gradient(
+        to bottom,
+        hsl(212, 18%, 14%) ,
+        hsl(220, 16%, 11%)
+    );
+    width: 500px;
+    padding: 2rem, 1.5rem;
+    border-radius: 0.625rem;
+    align-items: center;
+    justify-content: center;
+   
+}
+section.first-section{
+    padding-bottom: 1rem;
+}
+section.second-section{
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+h1, h2{
+    color: #fff;
+}
+
+
+p{
+    line-height: 1.8;
+    color: hsl(217, 12%, 63%);
+}
+
+p.disclaimer{
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style-type: none; 
+}
+
+ul, li, button{
+    font-family: inherit;
+    font-size: 1rem;
+}
+button{
+    user-select:none;
+    cursor: pointer;
+    height: 2rem;
+    
+}
+
+.btn{
+    background-color: hsl(213, 19%, 18%);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding-top: 0.3rem;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: hsl(217, 12%, 63%);
+}
+.btn:focus{
+    background-color: hsl(25, 97%, 53%);
+    transition: 0.8s;
+}
+.btn-submit{
+    background-color: hsl(25, 97%, 53%);
+    padding: 0.625rem 2rem 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    align-items: center;
+    height: 2.8rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.9rem;
+    transition: 0.5s;
+    margin-bottom: 2rem;
+}
+.btn-submit:hover{
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+    transition: 0.3s;
+}
+
+.container, .thank-you{
+    background-Image: linear-gradient(
+        to bottom,
+        hsl(212, 18%, 14%) ,
+        hsl(220, 16%, 11%)
+    );
+    max-width: 400px;
+    padding: 0 auto;
+    border-radius: 0.625rem;
+    
+}
+.container img{
+    padding: 0.8rem;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.container h1, .thank-you h2{
+    margin-bottom: 1rem;
+}
+
+.container p, .thank-you p{
+    margin-bottom: 1rem;
+}
+
+.container ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container ul li{
+    margin: 0.5rem auto;
+    line-height: 5rem;
+}
+
+.thank-you{
+    text-align: center;
+}
+
+.thank-you h2{
+    margin-top: 2rem;
+}
+.thank-you img{
+    display: block;
+    margin: 0 auto 1rem;
+    transition: 0.5s;
+}
+
+p.gray{
+    display: inline-block;
+    background-color:hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    padding: 0.3rem  1rem 0;
+    border-radius: 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-section.hidden{
+    display: none;
+}
+
+.attribution{
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+
+}
+
+.attribution a{
+    text-decoration: none;
+    color: lawngreen;
+
+}
+
+
+
+/*WEB DESKTOP*/
+@media screen and  (min-width:576px) and (max-width:1440px) { 
+    body{
+        width: 50%;
+        font-size: 18px;
+       
+    }
+
+    .first-section, .second-section{     
+        width: 90%;
+    }
+    .thank-you, .container{
+        max-width: 90%;
+        margin: 0 auto;
+        
+
+    }
+    ul{
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+
+    }
+    li{
+        margin: 0 auto;
+
+    }
+    .btn{
+        width: 3rem;
+        height: 3rem;
+        
+    }
+    .container h1, .thank-you h2{
+        margin-bottom: 1rem;
+    }
+    p.gray{
+       box-sizing: border-box;
+       width: 80%;
+    }
+    .attribution{
+        font-size: 18px;
+    }
+}
+
+
+/*WEB MOBILE*/
+@media screen and  (max-width:575px) { 
+    body{
+        width: 100%;
+       
+    }
+
+    .first-section, .second-section{     
+        width: 90%;
+    }
+    .thank-you, .container{
+        max-width: 90%;
+        margin: 0 auto;
+
+    }
+    ul{
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+
+    }
+    li{
+        margin: 0 auto;
+
+    }
+    .btn{
+        width: 2rem;
+        height: 2rem;
+        
+    }
+    .container h1, .thank-you h2{
+        margin-bottom: 1rem;
+    }
+    p.gray{
+        width: 90%;
+    }
+}
+
+
+
+
+
